@@ -1,168 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Dušan Tanasić</title>
-    <meta charset="utf-8" />
-    <link
-      rel="shortcut icon"
-      type="img/png"
-      href="images/Fivicon/fivicon.png"
-    />
-    <link rel="stylesheet" href="main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="./app.js"></script>
-  </head>
-  <body>
-    <div class="header page">
-      <nav id="main-menu">
-        <a href="#about">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<head>
+  <title>Dušan Tanasić</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="img/png" href="images/Fivicon/fivicon.png" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <div class="header page">
+    <nav id="main-menu">
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="header-text" id="about">
+    <div id="header">
+      <h1>Dušan Tanasić</h1>
+      <h2>Software Developer based in Belgrade, Serbia</h2>
     </div>
+  </div>
 
-    <div class="header-text" id="about">
-      <div id="header">
-        <h1>Dušan Tanasić</h1>
-        <h2>Software Developer based in Belgrade, Serbia</h2>
-      </div>
-    </div>
+  <div class="skill" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="language">
+        <div class="lang">
+          <h3>Languages</h3>
+          <div id="github">
+            <div id="git1">
+              <img alt="HTML 5" src="images/Stack/html5.svg" />
+              <p>HTML 5</p>
+              <p></p>
+            </div>
 
-    <div class="skill" id="skills">
-      <h2>My Skills</h2>
-      <div class="skills">
-        <div class="language">
-          <div class="lang">
-            <h3>Languages</h3>
-            <div id="github">
-              <div id="git1">
-                <img alt="HTML 5" src="images/Stack/html5.svg" />
-                <p>HTML 5</p>
-                <p></p>
-              </div>
+            <div id="git1">
+              <img alt="CSS 3" src="images/Stack/css3.svg" />
+              <p>CSS 3</p>
+              <p></p>
+            </div>
 
-              <div id="git1">
-                <img alt="CSS 3" src="images/Stack/css3.svg" />
-                <p>CSS 3</p>
-                <p></p>
-              </div>
-
-              <div id="git1">
-                <img alt="JavaScript" src="images/Stack/js.svg" />
-                <p>JavaScript</p>
-                <p></p>
-              </div>
+            <div id="git1">
+              <img alt="JavaScript" src="images/Stack/js.svg" />
+              <p>JavaScript</p>
+              <p></p>
             </div>
           </div>
-          <div class="vers">
-            <h3>Version control</h3>
-            <div id="github">
-              <div id="git1">
-                <img alt="Git" src="images/Stack/git.svg" />
-                <p>Git</p>
-                <p></p>
-              </div>
+        </div>
+        <div class="vers">
+          <h3>Version control</h3>
+          <div id="github">
+            <div id="git1">
+              <img alt="Git" src="images/Stack/git.svg" />
+              <p>Git</p>
+              <p></p>
+            </div>
 
-              <div id="git1">
-                <img alt="Git" src="images/Stack/github.svg" />
-                <p>GitHub</p>
-                <p></p>
-              </div>
+            <div id="git1">
+              <img alt="Git" src="images/Stack/github.svg" />
+              <p>GitHub</p>
+              <p></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="portfolio" id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="projects">
-        <div class="project">
-          <div class="proj">
-            <img src="images/projects/project1.png" alt="Mat Cleaners" />
-            <div class="text-holder">
-              <span>Mat Cleaners</span>
-            </div>
+  <div class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+      <div class="project">
+        <div class="proj" onclick="window.open('https://duk4.github.io/Mat-Cleaner/')">
+          <img src="images/projects/project1.png" alt="Mat Cleaners" />
+          <div class="text-holder">
+            <span>Mat Cleaners</span>
           </div>
-          <button
-            class="github-button"
-            onclick="window.open('https://github.com/Duk4/Mat-Cleaner')"
-          >
-            <img src="images/Socials/github.svg" alt="github" />
-            <p>GitHub</p>
-          </button>
         </div>
+        <button class="github-button" onclick="window.open('https://github.com/Duk4/Mat-Cleaner')">
+          <img src="images/Socials/github.svg" alt="github" />
+          <p>GitHub</p>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="contact" id="contact">
-      <div class="contact-text">
-        <h2>Contact</h2>
+  <div class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-form">
+      <form id="contact-form" method="POST" action="https://formspree.io/dusan.tanasic@yahoo.com">
+        <input type="text" name="name" class="form name" placeholder="Your name" required />
+        <br />
+        <br />
+
+        <input type="email" name="email" class="form email" placeholder="Your e-mail address" required />
+        <br />
+        <br />
+
+        <textarea name="message" class="form message" placeholder="Message" rows="6" required></textarea>
+        <br />
+
+        <div class="status"></div>
+
+        <input type="submit" class="form submit" value="SEND MESSAGE" />
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="social">
+      <div>
+        <a href="mailto:dusan.tanasic@yahoo.com"><img src="images/Socials/email.svg" alt="email" /></a>
       </div>
-      <div class="contact-form">
-        <form
-          id="contact-form"
-          method="POST"
-          action="https://formspree.io/dusan.tanasic@yahoo.com"
-        >
-          <input
-            type="text"
-            name="name"
-            class="form name"
-            placeholder="Your name"
-            required
-          />
-          <br />
-          <br />
-
-          <input
-            type="email"
-            name="email"
-            class="form email"
-            placeholder="Your e-mail address"
-            required
-          />
-          <br />
-          <br />
-
-          <textarea
-            name="message"
-            class="form message"
-            placeholder="Message"
-            rows="6"
-            required
-          ></textarea>
-          <br />
-
-          <div class="status"></div>
-
-          <input type="submit" class="form submit" value="SEND MESSAGE" />
-        </form>
+      <div>
+        <a href="https://www.linkedin.com/in/du%C5%A1an-tanasi%C4%87-9ba741127/"><img src="images/Socials/linkedin.svg"
+            alt="linkedin" /></a>
+      </div>
+      <div>
+        <a href="https://github.com/Duk4"><img src="images/Socials/github.svg" alt="github" /></a>
       </div>
     </div>
+    <div class="copyright">
+      <p>Copyright &copy; 2019 Dušan Tanasić</p>
+    </div>
+  </footer>
+</body>
 
-    <footer class="footer">
-      <div class="social">
-        <div>
-          <a href="mailto:dusan.tanasic@yahoo.com"
-            ><img src="images/Socials/email.svg" alt="email"
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/du%C5%A1an-tanasi%C4%87-9ba741127/"
-            ><img src="images/Socials/linkedin.svg" alt="linkedin"
-          /></a>
-        </div>
-        <div>
-          <a href="https://github.com/Duk4"
-            ><img src="images/Socials/github.svg" alt="github"
-          /></a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright &copy; 2019 Dušan Tanasić</p>
-      </div>
-    </footer>
-  </body>
 </html>
