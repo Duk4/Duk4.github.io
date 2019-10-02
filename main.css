@@ -131,6 +131,13 @@ body {
   font-size: 3rem;
 }
 
+.projects {
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+
+}
+
 .project {
   border: solid 2px #000000;
   border-radius: 5px;
@@ -169,7 +176,7 @@ body {
 }
 
 .proj:hover {
-  background-color: #dc0101;
+  background-color: #ffbe00;
 }
 
 .proj:hover img {
@@ -183,6 +190,10 @@ body {
 }
 
 .github-button {
+  color: #000;
+  background-color: #74B9FF;
+  border: none;
+  border-radius: 1rem;
   width: 100%;
   display: flex;
   margin-top: 30px;
@@ -190,6 +201,7 @@ body {
 
 .github-button:hover {
   background-color: #ffbe00;
+  color: black;
   cursor: pointer;
 }
 
@@ -204,6 +216,7 @@ body {
 .github-button p {
   flex: 1;
   flex-basis: 0;
+  text-align: left;
 }
 
 .contact {
