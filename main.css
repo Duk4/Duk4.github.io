@@ -242,7 +242,7 @@ form {
   width: 600px;
   background-color: #ffffff;
   outline: none;
-  border: 1px solid #189ad3;
+  border: 1px solid #107dac;
   font-size: 18px;
   color: #000000;
   margin-bottom: 10px;
@@ -251,6 +251,11 @@ form {
 
 input {
   height: 45px;
+  padding-left: 10px;
+}
+
+textarea {
+  padding-left: 10px;
 }
 
 .status {
@@ -268,8 +273,8 @@ input {
 }
 
 .submit:hover {
-  background-color: #ffbe00;
-  color: #000000;
+  background-color: #000000;
+  color: #107dac;
   cursor: pointer;
 }
 
