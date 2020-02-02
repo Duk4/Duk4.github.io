@@ -1,5 +1,3 @@
-//contact form code, when script tags are before html
-
 $(document).ready(function(){
     $('.submit').click(function(event){
         var name = $('.name').val();
