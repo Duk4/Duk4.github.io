@@ -6,7 +6,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Calibri;
+  font-family: "Calibri";
   text-align: center;
 }
 
@@ -122,27 +122,28 @@ body {
 }
 
 .portfolio {
-  background-color: rgb(255, 255, 255);
+  background-color: #000000;
   height: fit-content;
   padding: 4rem;
 }
 
 .portfolio h2 {
   font-size: 3rem;
+  color: #ffbe00;
 }
 
 .project {
   width: 50%;
   margin: 0 auto 1rem auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
   text-align: left;
   background-color: #ffbe00;
 }
 
-.project h3 {
+.project-title {
   font-size: 2rem;
-  margin: none;
+  margin: 0.5rem 0;
 }
 
 .github-button {
@@ -183,10 +184,11 @@ body {
 }
 
 .contact h2 {
+  margin: 0;
   font-size: 30pt;
   font-weight: bold;
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   color: #ffffff;
 }
 
@@ -263,7 +265,6 @@ textarea {
 
 @media (min-width: 1025px) and (max-width: 1366px) {
   body {
-    margin: auto;
     width: 100%;
   }
 
